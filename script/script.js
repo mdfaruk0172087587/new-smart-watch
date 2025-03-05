@@ -10,7 +10,7 @@ for(const colors of colorBox){
     e.target.classList.remove('border-gray-300')
     const imagesProduct = document.getElementById('images-product')
     const colorName= e.target.id;
-    imagesProduct.src="../images/" + colorName + ".png"
+    imagesProduct.src="images/" + colorName + ".png"
    })
 }
 // size
@@ -68,7 +68,7 @@ document.getElementById('btn-checkout').addEventListener('click', function(){
         div.innerHTML=`
         <div class="flex items-center justify-between border-b">
         <div class="flex gap-2 items-center">
-        <img class="w-10 h-10 rounded-md" src="${"../images/"}${item.Image}" alt="">
+        <img class="w-10 h-10 rounded-md" src="${"images/"}${item.Image}" alt="">
         <h>${item.title}</h>
         </div>
         <div class="flex items-center gap-24 mr-4">
