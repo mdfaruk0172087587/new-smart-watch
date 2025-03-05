@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/5f228a7dad.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class=" max-w-4xl min-h-screen mx-auto">
+            <!-- main section -->
+             <section class="flex gap-8">
+                <!-- img div -->
+                 <div id="images-section div" class="my-16 w-1/2 ">
+                    <img id="images-product" class="" src="images/purple.png" alt="">
+                 </div>
+    
+    
+                  <!-- main hrd section -->
+                  <section id="main-hrd-section -hidden" class="bg-slate-700 rounded-md p-5 w-4/6 mt-40 hidden">
+                    <!-- text div -->
+                     <div class="bg-white rounded-md p-5 relative">
+                      <h1>Your Cart</h1>
+                      <br>
+                      <!-- list text div -->
+                       <div class="flex justify-around items-center">
+                        <h>items</h>
+                        <h>Color </h>
+                        <h>Size</h>
+                        <h>Quantity </h>
+                        <h>Price</h>
+                       </div>
+    
+                       <!-- main text div -->
+                        <div id="added-main-text" class="border border-red-700">
+    
+                        </div>
+    
+    
+                        <!-- btn div -->
+                         <div class="mt-2 flex gap-2 justify-end">
+                          <button id="btn-continue-shopping" class="btn btn-soft rounded-md">Continue Shopping</button>
+                          <button id="btn-checkout-a" class="btn btn-primary rounded-md">Checkout</button>
+                         </div>
+                     </div>
+                  </section>
+    
+    
+                 <!-- text div -->
+                  <div id="text-section-div" class="my-16 w-1/2 pl-1 ">
+                    <!-- text section -->
+                     <div>
+                        <h1 class="font-bold text-3xl mb-1">Classy Modern Smart Watch</h1>
+                        <p class="">
+                            <div class="rating">
+                            <div class="mask mask-star bg-orange-700 " aria-label="1 star"></div>
+                            <div class="mask mask-star bg-orange-700" aria-label="2 star"></div>
+                            <div class="mask mask-star bg-orange-700" aria-label="3 star"></div>
+                            <div class="mask mask-star bg-orange-700" aria-label="4 star" aria-current="true"></div>
+                            <div class="mask mask-star bg-orange-700" aria-label="5 star"></div>
+                          </div> (2 Reviews)
+                        </p>
+                          <div class="mt-4 mb-2">
+                            <samp class="text-gray-400 line-through">$99.00</samp> &nbsp; <span class="text-purple-600 font-bold text-2xl">$79.00</span>
+                          </div>
+                          <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teaching.</p>
+                          <!-- type div -->
+                           <div class="flex items-center justify-between w-1/3 mt-3 mb-1">
+                            <p class="font-bold ">Type :</p>
+                            <p>Watch</p>
+                           </div>
+                           <!-- model div -->
+                           <div class="flex items-center justify-between w-1/2">
+                            <p class="font-bold ">Model:</p>
+                            <p>Forerunner 290XT</p>
+                           </div>
+                           <!-- color div text-->
+                            <div class="mt-1">
+                                <h1 class="font-bold text-lg mb-2">Band Color</h1>
+                                <!-- main color div -->
+                               <div class="flex gap-2">
+                                 <!-- purple -->
+                                 <div id="purple" class="w-6 h-6 bg-purple-600  rounded-full border color-box"></div>
+                                 
+                                <!-- teal -->
+                                 <div id="teal" class="w-6 h-6 bg-teal-600  rounded-full border color-box"></div>
+                                 
+                                <!-- gray -->
+                                 <div id="gray" class="w-6 h-6 bg-gray-600  rounded-full border color-box"></div>
+                                 
+                                <!-- cyan -->
+                                 <div id="cyan" class="w-6 h-6 bg-cyan-600  rounded-full border color-box"></div>
+                               </div>
+                                 
+                                 
+                            </div>
+                            <!-- Wrist Size div -->
+                            <div class="mb-5 mt-2">
+                              <h1 class="font-semibold text-lg mb-2">Wrist Size</h1>
+                              <!-- btn div -->
+                               <div>
+                                <button id="S"  class="btn btn-outline rounded-xl px-7 btn-size">S $69</button>
+                                <button id="M"  class="btn btn-outline rounded-xl px-7 btn-size">M $79</button>
+                                <button id="L"  class="btn btn-outline rounded-xl px-7 btn-size">L $89</button>
+                                <button id="XL"  class="btn btn-outline rounded-xl px-7 btn-size">XL $99</button>
+                               </div>
+                            </div>
+                            <!-- last btn section -->
+                             <div class="flex gap-5">
+                              <!-- - + btn -->
+                              <button class="btn w-28 flex justify-between ">
+                                <p class="btn-quantity">-</p>
+                                <p id="quantity-number">0</p>
+                                <p class="btn-quantity">+</p>
+                              </button>
+                              <!-- add to cart btn -->
+                              <button id="btn-add-to-cart" class="btn btn-outline bg-purple-800">Add To Cart
+    
+                              </button>
+                              <!-- love div -->
+                            <div class="">
+                              <i class="fa-solid fa-heart text-purple-800 "></i>
+                           </div>
+                             
+                             </div>
+                             <!-- new checkout btn -->
+                             <button id="btn-checkout" class="btn btn-outline btn-accent text-yellow-300 rounded-3xl px-11 mt-10 -ml-24 hidden">Checkout <span id="checkout-number">0</span></button>
+                            
+                     </div>
+                  </div>
+             </section>
+        </section>
+       <script src="script/style.js"></script>
+    </body>
+    </html>
